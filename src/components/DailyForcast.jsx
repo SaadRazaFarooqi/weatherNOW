@@ -1,12 +1,6 @@
 import React from 'react'
 
 function DailyForecast({ title, weatherData }) {
-    function formatTimeToAMPM(dateTimeString) {
-        const date = new Date(dateTimeString);
-        const formattedTime = date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
-        return formattedTime;
-    }
-
     return (
         <div>
 

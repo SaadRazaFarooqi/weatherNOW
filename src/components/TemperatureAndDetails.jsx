@@ -5,11 +5,6 @@ import { UilWind } from '@iconscout/react-unicons'
 import { UilSun } from '@iconscout/react-unicons'
 import { UilSunset } from '@iconscout/react-unicons'
 function TemperatureAndDetails({weatherData}) {
-    function formatUnixTimestamp(timestamp) {
-        const date = new Date(timestamp * 1000);
-        const formattedTime = date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
-        return formattedTime;
-    }
     return (
         <div>
             <div className="flex items-center justify-center py-6 text-xl text-cyan-300">

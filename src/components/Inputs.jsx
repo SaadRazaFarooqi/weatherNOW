@@ -1,11 +1,11 @@
+import { UilSearch } from '@iconscout/react-unicons';
 import React, { useState } from 'react';
-import { UilSearch, UilLocationPoint } from '@iconscout/react-unicons';
 
 function Inputs({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = () => {
-  
+
     onSearch(searchTerm);
   };
 

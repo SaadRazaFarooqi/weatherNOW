@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import axios from "axios";
+import { useState } from 'react';
 import './App.css';
 import DailyForecast from "./components/DailyForcast";
 import Forecast from './components/Forecast';
@@ -11,9 +11,7 @@ function App() {
 
   const API_KEY = "9d9e28816be54d2abd9150724243103"
   const [weatherData, setWeatherData] = useState(null);
-  const [searchTerm, setSearchTerm] = useState('Lahore');
   const handleSearch = (searchTerm) => {
-    setSearchTerm(searchTerm)
     fetchData(searchTerm);
   };
 
@@ -29,10 +27,10 @@ function App() {
       alert('No Location Found');
     }
   };
-  
+
   return (
     <div className="mx-auto max-w-screen-mx mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 ">
-      {}
+      { }
       <Inputs onSearch={handleSearch} />
 
       <TimeAndLocation weatherData={weatherData} />
